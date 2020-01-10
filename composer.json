@@ -1,0 +1,31 @@
+{
+    "name": "akturis/seat-paps",
+    "description": "Extended Operation",
+    "type": "seat-plugin",
+    "autoload": {
+        "psr-4": {
+            "Seat\\Akturis\\Paps\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrey Dubrovskikh",
+            "email": "akturis@gmail.com"
+        }
+    ],
+    "license": "GPL-3.0-or-later",
+    "minimum-stability": "dev",
+    "require": {
+        "eveseat/web": "^3.0",
+        "eveseat/eveapi": "^3.0",
+        "eveseat/notifications": "^3.0",
+        "eveseat/services": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Seat\\Akturis\\Paps\\PapsServiceProvider"
+            ]
+        }
+    }
+}
